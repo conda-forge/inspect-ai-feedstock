@@ -13,7 +13,7 @@ source:
   sha256: 12c7fcb0e32234f6e0002d9555ec4e0e98abe167e820951b933adafd99366966
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -32,7 +32,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - agent-client-protocol >=0.12.0
-    - aioboto3 >=13.0.0
+    - aiobotocore >=2.18.0
     - anyio >=4.14.0
     - beautifulsoup4 >=4.10.0
     - boto3
@@ -41,7 +41,7 @@ requirements:
     - docstring_parser >=0.16
     - exceptiongroup >=1.0.2
     - fastapi >=0.119.0
-    - fsspec <=2025.9.0,>=2023.1.0
+    - fsspec <=2026.6.0,>=2023.1.0
     - httpx
     - ijson >=3.2.0
     - jsonlines >=3.0.0
@@ -49,6 +49,7 @@ requirements:
     - jsonpath-ng >=1.8.0
     - jsonref >=1.1.0
     - jsonschema >3.1.1
+    - markdown-it-py >=2.2.0
     - mmh3 >3.1.0
     - nest-asyncio2 >=1.7.2
     - numpy
