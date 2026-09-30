@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: inspect-ai
-  version: "0.3.272"
+  version: "0.3.273"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/inspect_ai-${{ version }}.tar.gz
-  sha256: ba1c37f95a7be2a16a5772c9fa8ebb154daf977162eed764e03045460e791706
+  sha256: 08f6b0f355b76302739d6f296d1a0eb7a6aa764ca3d673de92b9c89386448761
 
 build:
   number: 0
